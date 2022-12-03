@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+    font-size: 16px;
+    background-color: rgb(227, 247, 219);
+}
+.mainContiner{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    font-size: 1em;
+}
+
+
+p, label {
+    color: rgb(46, 79, 34);
+}
+
+textarea {
+    background-color: rgb(227, 247, 219);
+    border: none;
+}
+input{
+    background-color: rgb(227, 247, 219);
+    color: rgb(46, 79, 34);
+    border: none;
+}
+
+.Box2 > img{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+#booking {
+    text-align: center;
+    color: rgb(46, 79, 34);
+}
+.Box3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color:rgb(162,195,150); 
+}
+.Box3 > div{
+    margin: 10px;
+    border: 2px solid rgb(46, 79, 34);
+    justify-content: center;
+}
+.Box4{
+    display: flex;
+    flex-direction: column;
+}
+.Box4 > div{
+    width: auto;
+    height: 200px;
+    margin: 15px;
+}
+.Box5 > form > input{
+    width:80%;
+    height: 20px;
+    margin: 7px;
+}
+.Box6 > form > input{
+    width: 100px;
+    height: 20px;
+    margin: 7px;
+}
+.Box7 > form > textarea{
+    width: 80%;
+    height: 180px;
+    margin: 7px;
+}
+.Box8 {
+    padding: 1em;
+    font-size: 20px;
+}
+.Box8 h4{
+    color: rgb(46, 79, 34);
+}
+
+@media  screen and (max-width: 950px) {
+    .Box2 > img{height: 300px;}
+    .Box3{ display: grid;
+         grid-template-columns: 100%;}
+    .Box4{ display: grid;
+         grid-template-columns: 100% }  
+}
+@media  screen and (max-width: 450px) {
+    .Box2 > img{height: 300px;}
+    .Box3{ display: grid;
+         grid-template-columns: 100%;}
+    .Box4{ display: grid;
+         grid-template-columns: 100% }  
+}

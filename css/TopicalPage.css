@@ -1,0 +1,369 @@
+body{
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mainContiner{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    font-size: 1em;
+}
+
+/* HEADER*/
+header{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: rgb(80, 119, 142);
+}
+header div{
+    margin: 5px;
+}
+.logo {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo > a {
+    text-decoration: none;
+    color: rgb(219, 241, 247);
+}
+
+
+/*For å lage den, så på denne siden https://dev.to/atulcodex/dropdown-menu-using-css-flexbox-28j8*/
+/* NAVIGASJON PÅ SIDEN*/
+nav {
+    display: flex;
+    justify-content: end;
+    position: relative; 
+    z-index: 100;
+} /*hadde problem med et bilde: https://www.sitepoint.com/community/t/css-dropdown-disappears-when-displayed-over-image/22558/2*/
+
+nav a:hover { 
+    background-color: rgb(150, 186, 195);
+}
+
+nav > div{
+    text-align: center;
+    width: 100px fit-content; 
+    height: 30px;
+    margin: 10px; 
+    margin-top: 15px;
+    font-size: 18px;
+    
+}
+
+nav div li {
+    list-style: none;
+    padding: 6px;
+    position:relative;
+    transition: 0.5s;
+    display: block;
+    text-align: left;
+  }
+nav div a {
+    color: rgb(219, 241, 247);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+nav div ul li a:hover {
+  background-color: rgb(80, 119, 142);
+}
+nav div ul {
+  display: none;
+}
+nav div:hover ul
+{
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  background-color: rgb(132, 182, 191);
+  width:fit-content;
+  padding: 10px 2px;
+  box-shadow: 0px 10px 50px 0px rgba(34, 78, 79, 0.3) /*rgba(0, 0, 0, 0.5)*/;
+}
+
+
+
+/* SELVE SIDEN */
+
+/* .side og .side > *:first-child er kode fra foreleser*/
+.side {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.side > *:first-child {
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 2rem;
+    overflow: auto;
+    max-height: 100vh;
+}
+
+
+section > div > ul > li {
+    margin-bottom: 5px;
+}
+
+#info {
+    background-image: linear-gradient(rgb(192, 226, 239),rgb(204,218,236));
+    color: rgb(34, 60, 79);
+}
+#info div a {
+    color: rgb(34, 60, 79);
+}
+
+#gjennomførbart {
+    background-image:linear-gradient(rgb(204,218,236),rgb(216,209,233));
+    color: rgb(34, 51, 79);
+}
+
+#merkelig {
+    background-image:linear-gradient(rgb(216,209,233),rgb(227,201,230));
+    color: rgb(43, 34, 79);
+}
+
+#usannsynlig {
+    background-image:linear-gradient(rgb(227,201,230), rgb(239, 192, 227));
+    color: rgb(69, 34, 79);
+}
+
+#elskverdig {
+    background-color: rgb(239, 192, 227);
+    color: rgb(79, 34, 71);
+}
+
+#nødvendig {
+    background-color: rgb(38, 35, 125);
+    color: rgb(220, 219, 247);
+    background-image: url(https://images.unsplash.com/photo-1577285930803-df9418bede68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2058&q=80);
+    background-size: cover;
+}
+
+
+
+/* ENDRE UTFORMING PÅ SKJERM */
+@media  screen and (max-width: 950px) {
+    header{ display: grid;
+     grid-template-columns: 100%;}
+
+     nav{display: grid;
+    grid-template-columns: 50% 50% ;}
+
+    nav > div{
+        
+        width: 80px fit-content; 
+        height: 30px;
+        margin: 10px; 
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    
+    
+    h1{font-size:20px;}
+    p{font-size: 13px;}
+    h2{font-size: 20px;}
+    ul{font-size: 13px;}
+}
+@media  screen and (max-width: 450px) {
+    header{ display: grid;
+     grid-template-columns: 100%;}
+
+     nav{display: grid;
+    grid-template-columns: 50% 50% ;}
+
+    nav > div{
+        
+        width: 80px fit-content; 
+        height: 30px;
+        margin: 10px; 
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    
+   
+    h1{font-size:20px;}
+    p{font-size: 13px;}
+    h2{font-size: 20px;}
+    ul{font-size: 13px;}
+    
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+

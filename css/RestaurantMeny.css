@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    font-size: 16px;
+    background-color: rgb(157, 200, 140);
+}
+.mainContiner{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0px auto;
+    font-size: 1em;
+}
+
+
+.pris {
+    text-align: center;
+    font-style: italic;
+    color: rgb(46, 79, 34);
+}
+
+div #vårmeny{
+    color: rgb(34, 65, 22);
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+    color: rgb(46, 79, 34);
+}
+h3, p{
+    color: rgb(46, 79, 34);
+}
+
+.Box2{
+    display: flex;
+    flex-direction: column;
+}
+.Box2 > div{
+    width: auto;
+    justify-content: center;
+    margin: 25px;
+    background-color:beige;
+}
+.Box21{
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+.Box21 > div{
+    background-color: rgb(206, 235, 195);
+    padding: 1em;
+}
+.Box21 > div:nth-child(odd){
+    background-color: rgb(227, 247, 219);
+}
+h2{
+    text-align: center;
+}
+@media screen and (max-width:950px) {
+    .pris{
+        font-size: 13px;
+    }
+    .Box21{
+        font-size: 13px;
+    }
+   
+}
+@media screen and (max-width:450px) {
+    .pris{
+        font-size: 13px;
+    }
+    .Box21{
+        font-size: 13px;
+    }
+   
+}
+
+    /* endrer hvordan linkene ser ut 
+    --> de ser bare ut som tekst   
+    --> så må endre mer*/
+
+    a {
+        text-decoration: none;
+        color: rgb(227, 247, 219);
+    }
+    

@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+    font-size: 16px;
+    background-color: rgb(227, 247, 219);
+}
+.mainContiner{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    font-size: 1em;
+}
+
+p {
+    color: rgb(46, 79, 34);
+}
+
+
+.Box3{
+    display: grid;
+    grid-template-columns:100%;
+}
+
+.Box3 > div > p{
+  padding: 1em;
+  font-size: 20px;
+}
+
+.Box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Box > div{
+    width: auto;
+    margin: 25px;
+}
+.Box2{
+    display: flex;
+    justify-content: center;
+}
+.Box2 > div {
+    margin: 25px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-color: rgb(206, 235, 195);
+    border: none;
+}
+
+
+.Box2 > div > a > img{
+    object-fit: cover; /*https://stackoverflow.com/questions/11757537/css-image-size-how-to-fill-but-not-stretch*/
+    width: 300px;
+    height: 350px;
+}
+
+
+
+.Box2 > div > p{
+    padding: 15px 11%;
+    font-size: 18px;
+}
+
+p > a {
+    color: rgb(46, 79, 34);
+    
+}
+
+@media screen and (max-width:950px) {
+    .Box2{display: grid;
+          grid-template-columns: 100%;}
+          
+                      
+    }
+@media screen and (max-width:450px) {
+    .Box2{display: grid;
+          grid-template-columns: 100%;}      
+    }
+

@@ -1,0 +1,89 @@
+body{
+    margin: 0px;
+    font-size: 16px;
+    background-color: rgb(227, 247, 219);
+}
+.mainContiner{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    font-size: 1em;
+}
+
+p {
+    color: rgb(46, 79, 34);
+}
+
+.Box2{
+    position: relative;
+}
+
+.gridbilder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+} /*https://stackoverflow.com/questions/48665316/how-to-create-a-css-grid-with-3-columns-and-unlimited-amount-of-items*/
+
+.gridbilder > img{
+    object-fit: cover; /*https://stackoverflow.com/questions/11757537/css-image-size-how-to-fill-but-not-stretch*/
+    width: 100%;
+    height: 300px;
+}
+
+#nightfall{
+    object-fit: cover; /*https://stackoverflow.com/questions/11757537/css-image-size-how-to-fill-but-not-stretch*/
+    width: 100%;
+    height: 600px;
+}
+
+.Box3{
+    display: grid;
+    grid-template-columns:100%;
+}
+
+.Box3 > div > p{
+  padding: 1em;
+  font-size: 20px;
+}
+
+.Box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Box > div{
+    width: auto;
+    margin: 25px;
+}
+
+.overskrift {
+    text-align: center;
+    color: rgb(46, 79, 34);
+}
+
+.Box4{
+    display: flex;
+    grid-template-columns: 50% 50%;
+    background-color:rgb(162,195,150); 
+    margin: 10px;
+    
+    justify-content: center;
+    padding: 1em;
+    font-size: 20px;
+}
+
+@media  screen and (max-width: 950px){
+    .gridbilder{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 300px);
+    }
+   
+}
+@media  screen and (max-width: 950px){
+    .gridbilder{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 300px);
+    }
+}
